@@ -91,12 +91,12 @@ public class ArrayPrograms {
 		
 		for(int i = 0 ; i < d; i++) {
 			int temp = arr[0];
-			
-			for(int j = 0; j < n - 1; j++) {
-				arr[j] = arr[j + 1];
+			int j = 1;
+			for(; j < n; j++) {
+				arr[j-1] = arr[j];
 			}
 			
-			arr[n - 1] = temp;
+			arr[j - 1] = temp;
 		}
 		
 		return arr;
@@ -109,12 +109,13 @@ public class ArrayPrograms {
 		
 		for(int i = 0 ; i < d; i++) {
 			int temp = arr[n - 1];
+			int j = n - 2;
 			
-			for(int j = n - 2; j >=0 ; j--) {
+			for(; j >=0 ; j--) {
 				arr[j + 1] = arr[j];
 			}
 			
-			arr[0] = temp;
+			arr[j + 1] = temp;
 		}
 		
 		return arr;
