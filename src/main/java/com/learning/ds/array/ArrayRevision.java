@@ -43,4 +43,45 @@ public class ArrayRevision {
 		
 		return arr;
 	}
+	
+	
+	public static int[] leftRotationUsingTempArray(int[] arr, int searchIndex) {
+		int n = arr.length;
+		int[] tempArray = new int[n];
+		
+		int j = 0;
+		
+		for(int i = 0 + searchIndex; i < n ; i++) {
+			tempArray[j++] = arr[i];
+		}
+		
+		int k = 0;
+		
+		for(; j < n; j++) {
+			tempArray[j] = arr[k++];
+		}
+		
+		return tempArray;
+	}
+	
+	// {1, 2, 3, 4, 5, 6}
+	// {5, 6, 1, 2, 3, 4}
+	public static int[] rightRotationUsingTempArray(int[] arr, int searchIndex) {
+		int n = arr.length;
+		int[] temp = new int[n];
+		
+		int j = 0;
+		
+		for(int i = 2; i < n; i++) {
+			temp[i] = arr[j++];
+		}
+		
+		int k = 0;
+		
+		for( ; j < n; j++) {
+			temp[k++] = arr[j];
+		}
+		
+		return temp;
+	}
 }

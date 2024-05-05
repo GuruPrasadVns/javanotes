@@ -16,7 +16,7 @@ public class ArrayRevisionTest {
 	}
 	
 	@Test
-	public void leftRotationFirstApproach() {
+	public void leftRotationFirstApproachTest() {
 		int[] arr = { 1, 2, 3, 4, 5, 6 };
 		int[] expectedArray = { 3, 4, 5, 6, 1, 2 };
 		
@@ -24,11 +24,27 @@ public class ArrayRevisionTest {
   	}
 	
 	@Test
-	public void rightRotationFirstApproach() {
+	public void rightRotationFirstApproachTest() {
 		int[] arr = {1, 2, 3, 4, 5, 6};
 		int[] expectedArray = {5, 6, 1, 2, 3, 4};
 		
 		assertArrayEquals(expectedArray, ArrayRevision.rightRotationFirstApproach(arr, 2));
+  	}
+	
+	@Test
+	public void leftRotationUsingTempArrayTest() {
+		int[] arr = { 1, 2, 3, 4, 5, 6 };
+		int[] expectedArray = { 3, 4, 5, 6, 1, 2 };
+		
+		assertArrayEquals(expectedArray, ArrayRevision.leftRotationUsingTempArray(arr, 2));
+  	}
+	
+	@Test
+	public void rightRotationTempArrayTest() {
+		int[] arr = {1, 2, 3, 4, 5, 6};
+		int[] expectedArray = {5, 6, 1, 2, 3, 4};
+		
+		assertArrayEquals(expectedArray, ArrayRevision.rightRotationUsingTempArray(arr, 2));
   	}
 
 }
