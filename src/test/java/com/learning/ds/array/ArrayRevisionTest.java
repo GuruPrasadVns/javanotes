@@ -5,6 +5,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+
+
 public class ArrayRevisionTest {
 	
 	@Test
@@ -13,6 +15,11 @@ public class ArrayRevisionTest {
 		
 		assertEquals(6, ArrayRevision.linearSearch(arr, 20));
 		assertEquals(-1, ArrayRevision.linearSearch(arr, 100));
+		
+		int[] secondArray = {10, 50, 30, 70, 80, 60, 20, 90, 40};
+		assertEquals(6, ArrayRevision.linearSearch(secondArray, 20));
+		assertEquals(8, ArrayRevision.linearSearch(secondArray, 40));
+		assertEquals(-1, ArrayRevision.linearSearch(secondArray, 5));
 	}
 	
 	@Test
@@ -46,5 +53,13 @@ public class ArrayRevisionTest {
 		
 		assertArrayEquals(expectedArray, ArrayRevision.rightRotationUsingTempArray(arr, 2));
   	}
+	
+	@Test
+	public void binarySearchIterativeTest() {
+		int[] arr = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+		assertEquals(1, ArrayRevision.binarySearchIterative(arr, 20));
+		assertEquals(3, ArrayRevision.binarySearchIterative(arr, 40));
+		assertEquals(-1, ArrayRevision.binarySearchIterative(arr, 5));
+	}
 
 }

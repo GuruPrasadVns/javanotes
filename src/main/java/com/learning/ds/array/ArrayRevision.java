@@ -2,10 +2,34 @@ package com.learning.ds.array;
 
 public class ArrayRevision {
 	
+	// Time Complexity : O(N)
+	// Space Complexity : O(1)
 	public static int linearSearch(int[] arr, int searchItem) {
 		for(int i = 0; i < arr.length; i++) {
 			if(arr[i] == searchItem)
 				return i;
+		}
+		
+		return -1;
+	}
+	
+	// prerequisite : Array must be sorted.
+	public static int binarySearchIterative(int[] arr, int searchItem) {
+		int n = arr.length;
+		int left = 0;
+		int right = n - 1;
+		
+		while(left <= right) {
+			int mid = left + (right - left)/2;
+			
+			if(arr[mid] == searchItem)
+				return mid;
+			
+			else if(arr[mid] > searchItem)
+				right = mid - 1;
+			
+			else if(arr[mid] < searchItem)
+				left = mid + 1;
 		}
 		
 		return -1;
