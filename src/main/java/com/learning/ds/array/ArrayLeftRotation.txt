@@ -1,5 +1,8 @@
 Types of Rotations In Array
-------------------------------
+---------------------------------------------------------------------------
+	https://www.geeksforgeeks.org/complete-guide-on-array-rotations/
+	
+	
 	1. Right Rotation
 	---------------------------------------------
 		1 2 3 4 5 6 -> 6 1 2 3 4 5 -> 5 6 1 2 3 4
