@@ -14,6 +14,8 @@ public class ArrayRevision {
 	}
 	
 	// prerequisite : Array must be sorted.
+	// Time Complexity : O(log N)
+	// Space Complexity : O(1)
 	public static int binarySearchIterative(int[] arr, int searchItem) {
 		int n = arr.length;
 		int left = 0;
