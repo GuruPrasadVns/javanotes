@@ -61,5 +61,13 @@ public class ArrayRevisionTest {
 		assertEquals(3, ArrayRevision.binarySearchIterative(arr, 40));
 		assertEquals(-1, ArrayRevision.binarySearchIterative(arr, 5));
 	}
+	
+	@Test
+	public void arrayReverseTest() {
+		int[] arr = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+		int[] expectedArray = {90,80, 70, 60, 50, 40, 30, 20, 10};
+		
+		assertArrayEquals(expectedArray, ArrayRevision.reverseArray(arr));
+	}
 
 }

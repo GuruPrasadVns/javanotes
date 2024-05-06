@@ -110,4 +110,21 @@ public class ArrayRevision {
 		
 		return temp;
 	}
+	
+	public static int[] reverseArray(int[] arr) {
+		int low = 0;
+		int high = arr.length - 1;
+		
+		while(low < high) {
+			swap(arr, low++, high--);
+		}
+		
+		return arr;
+	}
+
+	private static void swap(int[] arr, int i, int j) {
+		int temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;		
+	}
 }
