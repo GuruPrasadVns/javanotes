@@ -1,0 +1,64 @@
+arr = [23, 12, 45, 67, 2, 76, 55}
+
+firstMax=
+secondMax=
+thirdMax=
+
+if(23 > thirdMax): true
+---------------------------------------------------------
+	firstMax = secondMax
+	secondMax = thirdMax
+	thirdMax = 23
+	
+if(12 > thirdMax): false
+------------------------------------------------------------
+
+else if(12 > secondMax): true
+--------------------------------------------------------------
+	firstMax = secondMax
+	secondMax = 12
+	
+
+if(45 > thirdMax) : true
+--------------------------------------------------------------
+	firstMax = secondMax = 12
+	secondMax = thirdMax = 23
+	
+	thirdMax = 45
+	
+	
+if(67 > thirdMax) : true
+-----------------------------------------------------------------
+	firstMax = 23
+	secondMax = 45
+	thirdMax = 67
+	
+
+if(2 > thirdMax): false
+else if : false
+else if : false
+
+if(76 > thirdMax) : true
+-----------------------------------------
+	firstMax = 45
+	secondMax = 67
+	thirdMax = 76
+	
+if(55 > thirdMax): false
+else if(55 > secondMax) : false
+else if(55 > firstMax): true
+----------------------------------------
+	firstMax = 55
+	
+	
+arr = [5 , 5, 5, 1]
+
+if(5 > thirdMax)
+	firstMax
+	secondMax
+	thirdMax = 5
+	
+else if(
+
+
+
