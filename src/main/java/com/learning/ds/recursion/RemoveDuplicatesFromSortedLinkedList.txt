@@ -1,0 +1,36 @@
+1 -> 2 ->2 -> 3 -> null
+----------------------------------------------------------------
+
+removeDuplicates(Node head) => removeDuplicates(Node(1))
+--------------------------------------------------------------------
+	Node toFree = null;
+	
+	if(head == null) : false
+		return null;
+		
+	if(head.next != null) : true
+	------------------------------------------------------------
+		if(head.data === head.next.data) => if(1 ==2): false
+		
+		else removeDuplicates(head.next) => removeDuplicates(Node(2))
+		------------------------------------------------------------------
+			Node toFree = null;
+			
+			if(head == null ) : false
+			
+			if(head.data == head.next.data) => if(2 == 2) : true
+			-----------------------------------------------------------------
+				toFree = head.next => toFee = Node(2)
+				head.next = head.next.next => 1 -> 2 -> 3 -> null && head-> 2
+				removeDuplicates(2)
+				--------------------------------------------------------------
+					Node toFree = null;
+					
+					head == null : false
+					
+					if(head.next != null) : true
+					---------------------------------------------------------
+						if(head.data == head.next.data) : false
+						else removeDuplicates(3)
+						----------------------------------------------------
+							
